@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red, .yellow, .green{
+            height: 7rem;
+            width: 30rem;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .yellow{
+            background-color: yellow;
+            display: flexbox;
+            position: relative;
+        }
+
+        .green{
+            background-color: green;
+        }
+        .star {
+            position: relative;
+  
+            display: inline-block;
+            width: 0;
+            height: 0;
+            left: 10rem;
+  
+            margin-left: .9em;
+            margin-right: .9em;
+            margin-bottom: 1.2em;
+  
+             border-right:  .3em solid transparent;
+             border-bottom: .7em  solid black;
+             border-left:   .3em solid transparent;
+
+  /* Controlls the size of the stars. */
+            font-size: 3.9rem;
+  
+            &:before, &:after {
+                content: '';
+    
+                display: block;
+                width: 0;
+                height: 0;
+    
+                position: absolute;
+                top: .6em;
+                left: -1em;
+  
+                border-right:  1em solid transparent;
+                border-bottom: .7em  solid black;
+                border-left:   1em solid transparent;
+  
+                transform: rotate(-35deg);
+             }
+  
+            &:after {  
+                transform: rotate(35deg);
+            }
+}
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="yellow">
+        <div class="star"></div>
+    </div>
+    <div class="green"></div>
+</body>
+</html>

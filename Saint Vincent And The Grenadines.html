@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            height: 20rem;
+            width: 30rem;
+        }
+
+        .blue{
+            flex: 1;
+            background-color: #0072c6;
+        }
+
+        .yellow{
+            flex: 2;
+            background-color: #fcd116;
+            position: relative;
+        }
+
+        .green{
+            flex: 1;
+            background-color: #009e60;
+        }
+
+
+        .upper{
+            height: 0;
+            width: 0;
+
+            border-bottom: 3rem solid green;
+            border-left: 1.5rem solid transparent;
+            border-right: 1.5rem solid transparent;
+        }
+
+        .lower{
+            height: 0;
+            width: 0;
+
+            border-top: 3rem solid green;
+            border-left: 1.5rem solid transparent;
+            border-right: 1.5rem solid transparent;
+        }
+
+        .one, .two, .three{
+            width: 1.5rem;
+            position: absolute;
+        }
+
+        .one{
+            top: 12rem;
+            left: 6rem;
+        }
+
+        .two{
+            top: 8rem;
+            left: 4rem;
+        }
+
+        .three{
+            top: 8rem;
+            left: 8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blue"></div>
+        <div class="yellow">
+            <div class="one">
+                <div class="upper"></div>
+                <div class="lower"></div>
+            </div>
+            <div class="two">
+                <div class="upper"></div>
+                <div class="lower"></div>
+            </div>
+            <div class="three">
+                <div class="upper"></div>
+                <div class="lower"></div>
+            </div>
+        </div>
+        <div class="green"></div>
+    </div>
+</body>
+</html>

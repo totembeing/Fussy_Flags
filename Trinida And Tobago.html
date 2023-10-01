@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 250px;
+            width: 400px;
+            background-color: black;
+            position: relative;
+        }
+
+        .leftWhite{
+            height: 0;
+            width: 0;
+            border-bottom: 250px solid white;
+            border-right: 300px solid transparent;
+            position: absolute;
+        }
+
+        .rightWhite{
+            height: 0%;
+            width: 0%;
+            border-top: 250px solid white;
+            border-left: 300px solid transparent;
+            position: absolute;
+            left: 100px;
+        }
+
+        .leftRed{
+            height: 0;
+            width: 0;
+            border-bottom: 240px solid red;
+            border-right: 285px solid transparent;
+            position: absolute;
+            border-top: 10px solid transparent;
+        }
+
+        .rightRed{
+            height: 0%;
+            width: 0%;
+            border-top: 240px solid red;
+            border-left: 285px solid transparent;
+            position: absolute;
+            left: 115px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="leftWhite"></div>
+        <div class="rightWhite"></div>
+        <div class="leftRed"></div>
+        <div class="rightRed"></div>
+    </div>
+</body>
+</html>
